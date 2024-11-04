@@ -1,0 +1,185 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/background.jpg'); /* Add your image path here */
+    background-size: cover; /* Ensures the background image covers the entire screen */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+
+
+header { 
+    text-align: center; /* For fallback alignment */
+    display: flex;
+    align-items: center; /* Vertically center the logo and nav links */
+    justify-content: space-between; /* Logo on left, nav on right */
+    background:  #0970ed; /* Gradient background */
+    color: white;
+    padding: 1em 2em; /* Add some horizontal padding for spacing */
+}
+
+nav a {
+    color: white;
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    margin-top: 200px;
+
+}
+.divdes{
+    display: flex;
+
+}
+
+
+/*new code added */
+/* General styling for the box */
+.box {
+    height: 30vh; /* 30% of the viewport height */
+    width: 30%; /* Make the box span full width */
+    background-color: #f5f5f5; /* Light background */
+    margin: 10px; /* Add margin for spacing */
+    padding: 1.5em; /* Add padding inside the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    font-size: 1.5em; /* Slightly larger font */
+    text-align: center; /* Centered text */
+    background-image: linear-gradient(135deg, #678bf0, #33739d); /* Gradient background */
+    color: white; /* Text color */
+    font-family: 'Arial', sans-serif; /* Clean font */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.box:hover {
+    transform: translateY(-5px); /* Subtle hover movement */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow on hover */
+}
+
+/* Styling for the section */
+#projects, #map-section {
+    padding: 2em;
+}
+
+#map {
+    height: 50vh; /* Set height for the map section */
+    width: 100%;
+    margin-top: 1em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header, footer {
+    background-color: #0970ed;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.logo-shape {
+    
+   /* Adjust the width to your preference */
+    height: 100px; /* Adjust the height accordingly */
+    border-radius: 100%; /* This creates a circular shape */
+    object-fit: cover; /* Ensures the GIF is scaled correctly within the shape */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for effect */
+    border: 2px solid #fff; /* Optional: Add a border around the logo */
+}
+.bubbles {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: flex-end; /* Align bubbles at the bottom initially */
+    justify-content: space-around;
+    position: fixed; /* Make the bubbles container fixed to cover the whole page */
+    top: 0; /* Start from the top */
+    left: 0; /* Cover full width */
+    z-index: 10; /* Ensure the bubbles are above other elements */
+    pointer-events: none; /* Prevent the bubbles from interfering with interactions */
+    overflow: hidden; /* Hide overflow when bubbles move out of the screen */
+}
+
+.bubbles img {
+    width: 50px;
+    border-radius: 50%;
+    animation: bubble 7s linear infinite;
+    opacity: 0;
+}
+
+@keyframes bubble {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.5; /* Fade in */
+    }
+    50% {
+        transform: translateY(-40vh);
+        opacity:0.4;
+    }
+    70% {
+        opacity: 0.8; /* Stay visible for a bit */
+    }
+    100% {
+        transform: translateY(-80vh);
+        opacity: 0; /* Fade out */
+    }
+}
+
+.bubbles img:nth-child(1) {
+    animation-delay: 2s;
+    width: 28px;
+}
+.bubbles img:nth-child(2) {
+    animation-delay: 1s;
+    width: 17px;
+}
+.bubbles img:nth-child(3) {
+    animation-delay: 3s;
+    width: 27px;
+}
+.bubbles img:nth-child(4) {
+    animation-delay: 4.5s;
+    width: 20px;
+}
+.bubbles img:nth-child(5) {
+    animation-delay: 3s;
+    width:25px;
+}
+.bubbles img:nth-child(6) {
+    animation-delay: 6s;
+    width: 20px;
+}
+.bubbles img:nth-child(7) {
+    animation-delay: 7s;
+    width: 23px;
+}

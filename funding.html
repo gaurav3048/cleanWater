@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<header>
+  <video src="/video.mp4" class="logo-shape " width="100px" autoplay muted loop></video>
+  <h1>CleanWater</h1>
+
+  <nav>
+      <a href="../index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="profile.html">Profile</a>
+      <a href="funding.html">Funding-chart</a>
+      <a href="signup.html">Sign Up</a>
+      <a href="login.html">Login</a>
+  </nav>
+</header>
+<footer>
+  <p>&copy; 2024 CleanWater. All rights reserved.</p>
+</footer>
+
+<body>
+    <canvas id="funding-chart" width="400" height="200"></canvas>
+<script>
+  var ctx = document.getElementById('funding-chart').getContext('2d');
+  var chart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Project A', 'Project B', 'Project C'],
+      datasets: [{
+        label: 'Funding Progress',
+        data: [65, 59, 80],
+        backgroundColor: ['#0066cc', '#0099cc', '#00cccc']
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+</body>

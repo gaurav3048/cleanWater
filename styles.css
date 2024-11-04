@@ -1,0 +1,139 @@
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: #1571e9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/background.jpg'); /* Add your image path here */
+    background-size: cover; /* Ensures the background image covers the entire screen */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+header {
+    background-color: #0970ed;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+header { 
+    text-align: center; /* For fallback alignment */
+    display: flex;
+    align-items: center; /* Vertically center the logo and nav links */
+    justify-content: space-between; /* Logo on left, nav on right */
+    background: linear-gradient(to right, #0970ed, #6da7ff); /* Gradient background */
+    color: white;
+    padding: 1em 2em; /* Add some horizontal padding for spacing */
+}
+nav a {
+    color: white;
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+}
+
+form div {
+    margin-bottom: 1em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+input {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 0.7em 1.5em;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004999;
+}
+
+p {
+    text-align: center;
+}
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%; /* Reduce the width to make it less wide */
+    margin: 2em auto 0 auto; /* Center the footer with margin and push it below the content */
+    border-radius: 10px; /* Optional: Add rounded corners to the footer */
+}
+
+.imageEdit {
+    height: 60px; /* Set the height for the video */
+    width: auto; /* Maintain aspect ratio */
+    position: fixed; /* Fixes the video to a specific position */
+    top: 0; /* Position at the top */
+    left: 0; /* Position at the left */
+    border-radius: 5px; /* Round the corners */
+    z-index: 1000; /* Ensures the video stays above other elements */
+}
+
+
+
+/*new code added */
+/* General styling for the box */
+
+/* Styling for the section */
+#projects, #map-section {
+    padding: 2em;
+}
+
+#map {
+    height: 50vh; /* Set height for the map section */
+    width: 100%;
+    margin-top: 1em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header, footer {
+    background-color: #0970ed;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+.logo-shape {
+    
+    /* Adjust the width to your preference */
+     height: 100px; /* Adjust the height accordingly */
+     border-radius: 100%; /* This creates a circular shape */
+     object-fit: cover; /* Ensures the GIF is scaled correctly within the shape */
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for effect */
+     border: 2px solid #fff; /* Optional: Add a border around the logo */
+ }
+ 
